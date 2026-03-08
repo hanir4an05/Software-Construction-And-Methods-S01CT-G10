@@ -1,4 +1,4 @@
-class Course {//code 1
+class Course {// code 1
 
     // Attributes
     private String courseName;
@@ -9,8 +9,8 @@ class Course {//code 1
 
     // Constructor
     public Course(String courseName, String courseCode,
-                  int creditHour, String courseSummary,
-                  String msTeamsLink) {
+            int creditHour, String courseSummary,
+            String msTeamsLink) {
 
         this.courseName = courseName;
         this.courseCode = courseCode;
@@ -61,11 +61,6 @@ class Course {//code 1
         this.msTeamsLink = msTeamsLink;
     }
 
-  //code 2
-
-
-  //code 3
-
     // Display Method
     public void displayCourse() {
         System.out.println("Course Name   : " + courseName);
@@ -87,13 +82,49 @@ class CourseManager {
         courseCount = 0;
     }
 
+    // Number 2: Course Input Implementation
+    // a. Input fields for each course attribute
+    // b. Implement logic to 'Submit' and add a course profile
+    public void inputNewCourse(java.util.Scanner scanner) {
+        System.out.println("\n=== ADD NEW COURSE ===");
+
+        System.out.print("Enter Course Name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter Course Code: ");
+        String code = scanner.nextLine();
+
+        int credit = 0;
+        while (true) {
+            System.out.print("Enter Credit Hour: ");
+            try {
+                credit = Integer.parseInt(scanner.nextLine());
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input! Please enter a number for credit hours.");
+            }
+        }
+
+        System.out.print("Enter Course Summary: ");
+        String summary = scanner.nextLine();
+
+        System.out.print("Enter MS Teams Link: ");
+        String link = scanner.nextLine();
+
+        // c. Create a list or array to store multiple course objects
+        // d. Implement checks / coding technique to prevent array out-of-bound error
+        Course newCourse = new Course(name, code, credit, summary, link);
+        addCourse(newCourse);
+    }
+
     // Add course to the array
     public void addCourse(Course course) {
         if (courseCount < courses.length) {
             courses[courseCount] = course;
             courseCount++;
+            System.out.println("\nCourse added successfully!");
         } else {
-            System.out.println("Course list is full!");
+            System.out.println("\nError: Course list is full! Cannot add more courses.");
         }
     }
 
@@ -111,9 +142,9 @@ class CourseManager {
     public void displaySearchResult(String searchCode) {
         System.out.println("\n=== SEARCH RESULTS ===");
         System.out.println("Searching for course code: " + searchCode);
-        
+
         Course foundCourse = searchCourse(searchCode);
-        
+
         if (foundCourse != null) {
             System.out.println("\nCourse found!");
             System.out.println("===================");
@@ -127,24 +158,24 @@ class CourseManager {
     public void editCourse(String searchCode, java.util.Scanner scanner) {
         System.out.println("\n=== EDIT COURSE ===");
         System.out.println("Searching for course code: " + searchCode);
-        
+
         Course courseToEdit = searchCourse(searchCode);
-        
+
         if (courseToEdit != null) {
             System.out.println("\nCourse found!");
             System.out.println("===================");
             courseToEdit.displayCourse();
-            
+
             System.out.println("\n--- Edit Course Details ---");
             System.out.println("(Press Enter to keep current value)");
-            
+
             // Edit course name
             System.out.print("\nEnter new Course Name [" + courseToEdit.getCourseName() + "]: ");
             String newName = scanner.nextLine();
             if (!newName.trim().isEmpty()) {
                 courseToEdit.setCourseName(newName);
             }
-            
+
             // Edit credit hour
             System.out.print("Enter new Credit Hour [" + courseToEdit.getCreditHour() + "]: ");
             String creditInput = scanner.nextLine();
@@ -156,26 +187,26 @@ class CourseManager {
                     System.out.println("Invalid number, keeping original value.");
                 }
             }
-            
+
             // Edit course summary
             System.out.print("Enter new Course Summary [" + courseToEdit.getCourseSummary() + "]: ");
             String newSummary = scanner.nextLine();
             if (!newSummary.trim().isEmpty()) {
                 courseToEdit.setCourseSummary(newSummary);
             }
-            
+
             // Edit MS Teams link
             System.out.print("Enter new MS Teams Link [" + courseToEdit.getMsTeamsLink() + "]: ");
             String newLink = scanner.nextLine();
             if (!newLink.trim().isEmpty()) {
                 courseToEdit.setmsteamslink(newLink);
             }
-            
+
             // Display edited course
             System.out.println("\n=== EDITED COURSE ===");
             courseToEdit.displayCourse();
             System.out.println("Course updated successfully!");
-            
+
         } else {
             System.out.println("\nCourse not found!");
         }
@@ -196,8 +227,6 @@ class CourseManager {
     }
 }
 
-
-
 // Main class to test the search and edit functions
 class Main {
     public static void main(String[] args) {
@@ -205,55 +234,60 @@ class Main {
         CourseManager manager = new CourseManager(10);
 
         // Sample data
-        manager.addCourse(new Course("Software Construction", "CS101", 3, 
-                                     "Introduction to software development", 
-                                     "https://teams.microsoft.com/cs101"));
-        manager.addCourse(new Course("Data Structures", "CS201", 4, 
-                                     "Advanced data structures and algorithms", 
-                                     "https://teams.microsoft.com/cs201"));
-        manager.addCourse(new Course("Database Systems", "CS301", 3, 
-                                     "Database design and SQL", 
-                                     "https://teams.microsoft.com/cs301"));
+        manager.addCourse(new Course("Software Construction", "CS101", 3,
+                "Introduction to software development",
+                "https://teams.microsoft.com/cs101"));
+        manager.addCourse(new Course("Data Structures", "CS201", 4,
+                "Advanced data structures and algorithms",
+                "https://teams.microsoft.com/cs201"));
+        manager.addCourse(new Course("Database Systems", "CS301", 3,
+                "Database design and SQL",
+                "https://teams.microsoft.com/cs301"));
 
         boolean running = true;
-        
+
         while (running) {
             System.out.println("\n===== COURSE MANAGEMENT SYSTEM =====");
-            System.out.println("1. Display All Courses");
-            System.out.println("2. Search Course");
-            System.out.println("3. Edit Course");
-            System.out.println("4. Exit");
+            System.out.println("1. Add New Course");
+            System.out.println("2. Display All Courses");
+            System.out.println("3. Search Course");
+            System.out.println("4. Edit Course");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
-            
+
             String choice = scanner.nextLine();
-            
+
             switch (choice) {
                 case "1":
+                    manager.inputNewCourse(scanner);
+                    break;
+
+                case "2":
                     manager.displayAllCourses();
                     break;
-                    
-                case "2":
+
+                case "3":
                     System.out.print("\nEnter Course Code to search: ");
                     String searchCode = scanner.nextLine();
                     manager.displaySearchResult(searchCode);
                     break;
-                    
-                case "3":
+
+                case "4":
                     System.out.print("\nEnter Course Code to edit: ");
                     String editCode = scanner.nextLine();
                     manager.editCourse(editCode, scanner);
                     break;
-                    
-                case "4":
+
+                case "5":
                     System.out.println("\nExiting program. Goodbye!");
                     running = false;
                     break;
-                    
+
                 default:
                     System.out.println("\nInvalid choice! Please try again.");
             }
         }
-        
+
         scanner.close();
     }
 }
