@@ -6,14 +6,25 @@ import java.util.Scanner;
 public class DeleteStudent {
     private Student[] students;
     private int studentCount;
+    private CacheEngine cache; // Requirement a: Caching API
 
     public DeleteStudent(int capacity) {
         this.students = new Student[capacity];
         this.studentCount = 0;
+        this.cache = new CacheEngine(10); // Initialize cache with size 10
+    }
+
+    // --- Suggestion Logic (Requirement b) ---
+    public void suggestStudentID(String prefix) {
+        java.util.List<String> suggestions = cache.getSuggestions(prefix);
+        if (!suggestions.isEmpty()) {
+            System.out.print("   [Suggestion: " + suggestions.get(0) + " (Type '" + suggestions.get(0) + "' or continue typing)]");
+        }
     }
 
     // --- Search Logic ---
     public Student searchStudent(String studentID) {
+        cache.cacheSearch(studentID); // Cache every search query
         for (int i = 0; i < studentCount; i++) {
             if (students[i].getStudentID().equalsIgnoreCase(studentID)) {
                 return students[i];
@@ -44,17 +55,36 @@ public class DeleteStudent {
         student.displayStudent();
 
         System.out.println("\nEnter new details (Leave blank to keep current):");
-        System.out.print("New Name [" + student.getStudentName() + "]: ");
+        
+        // Auto-suggestion for Name
+        String nameSuggestion = cache.getFieldSuggestion("Name");
+        System.out.print("New Name [" + student.getStudentName() + "]" + 
+            (nameSuggestion != null ? " (Last used: " + nameSuggestion + ")" : "") + ": ");
         String name = scanner.nextLine();
-        if (!name.trim().isEmpty()) student.setStudentName(name);
+        if (!name.trim().isEmpty()) {
+            student.setStudentName(name);
+            cache.cacheFormField("Name", name); // Cache data filled in form field
+        }
 
-        System.out.print("New Gmail [" + student.getGmail() + "]: ");
+        // Auto-suggestion for Gmail
+        String gmailSuggestion = cache.getFieldSuggestion("Gmail");
+        System.out.print("New Gmail [" + student.getGmail() + "]" + 
+            (gmailSuggestion != null ? " (Last used: " + gmailSuggestion + ")" : "") + ": ");
         String gmail = scanner.nextLine();
-        if (!gmail.trim().isEmpty()) student.setGmail(gmail);
+        if (!gmail.trim().isEmpty()) {
+            student.setGmail(gmail);
+            cache.cacheFormField("Gmail", gmail); // Cache data filled in form field
+        }
 
-        System.out.print("New Phone [" + student.getPhoneNumber() + "]: ");
+        // Auto-suggestion for Phone
+        String phoneSuggestion = cache.getFieldSuggestion("Phone");
+        System.out.print("New Phone [" + student.getPhoneNumber() + "]" + 
+            (phoneSuggestion != null ? " (Last used: " + phoneSuggestion + ")" : "") + ": ");
         String phone = scanner.nextLine();
-        if (!phone.trim().isEmpty()) student.setPhoneNumber(phone);
+        if (!phone.trim().isEmpty()) {
+            student.setPhoneNumber(phone);
+            cache.cacheFormField("Phone", phone); // Cache data filled in form field
+        }
 
         System.out.println("\n--- Update Successful. New Attributes: ---");
         student.displayStudent(); // Invoked display function
