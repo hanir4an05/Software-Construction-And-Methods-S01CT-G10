@@ -1,6 +1,6 @@
 package SLMSWORKG10;/*package to connect all of the class file in course*/
 
-public class Course {/*the only public class in the course system*/
+public  class Course {/*the only public class in the course system*/
 
     private String courseName;
     private String courseCode;
@@ -8,7 +8,7 @@ public class Course {/*the only public class in the course system*/
     private String courseSummary;
     private String msTeamsLink;
 
-    /*Constructor*/
+    /*Constructor:used to initialize objects and automatically call when an instance of a class is created using the new keyword*/
     public Course(String courseName, String courseCode, int creditHour, String courseSummary, String msTeamsLink) {
         this.courseName = courseName;
         this.courseCode = courseCode;
@@ -38,7 +38,7 @@ public class Course {/*the only public class in the course system*/
         return msTeamsLink;
     }
 
-    /* Setters*/
+    /* Setters:*/
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
@@ -55,7 +55,7 @@ public class Course {/*the only public class in the course system*/
         this.msTeamsLink = msTeamsLink;
     }
 
-    /*Display method*/
+    /*Display method:will show in the output*/
     public void displayCourse() {
         System.out.println("Course Name   : " + courseName);
         System.out.println("Course Code   : " + courseCode);
@@ -64,3 +64,4 @@ public class Course {/*the only public class in the course system*/
         System.out.println("MS Teams Link : " + msTeamsLink);
     }
 }
+
