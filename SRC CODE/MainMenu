@@ -1,3 +1,5 @@
+package SLMSWORKG10
+
 import java.util.Scanner;
 
  class MainMenu {
@@ -5,29 +7,43 @@ import java.util.Scanner;
         Scanner scanner = new Scanner(System.in);
 
         // course sample
-        CourseEngine engine = new CourseEngine(10);
+        CourseEngine Courseengine = new CourseEngine(10);
 
-        engine.addCourse(new Course("Software Construction", "CS101", 3,
+        Courseengine.addCourse(new Course("Software Construction", "CS101", 3,
                 "Introduction to software development",
                 "https://teams.microsoft.com/cs101"));
-        engine.addCourse(new Course("Data Structures", "CS201", 4,
+        Courseengine.addCourse(new Course("Data Structures", "CS201", 4,
                 "Advanced data structures and algorithms",
                 "https://teams.microsoft.com/cs201"));
-        engine.addCourse(new Course("Database Systems", "CS301", 3,
+        Courseengine.addCourse(new Course("Database Systems", "CS301", 3,
                 "Database design and SQL",
                 "https://teams.microsoft.com/cs301"));
 
+    
+//String studentName, String studentID, String gmail, String phoneNumber
         // student module
         DefineStudent studentInput = new DefineStudent();
         StudentEngine studentEngine = new StudentEngine(10);
+
+          studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
+                "0191116674"));
+
+            studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
+                "0191116674"));
+       
+            studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
+                "0191116674"));
+
+
         EnrollmentEngine enrollEngine =
-        new EnrollmentEngine(studentEngine, engine, 50);
+        new EnrollmentEngine(studentEngine, Courseengine, 50);
             CacheAPI cache = new CacheAPI();
 
         boolean running = true;
 
         while (running) {
-            System.out.println("MAIN SYSTEM ");
+            System.out.println("\nMAIN SYSTEM ");
+             System.out.println("------------ ");
             System.out.println("1. Course Management");
             System.out.println("2. Student Management");
             System.out.println("3. Enrollment Management");
@@ -43,7 +59,7 @@ import java.util.Scanner;
                     boolean courseMenu = true;
 
                     while (courseMenu) {
-                        System.out.println("\n===== COURSE MANAGEMENT SYSTEM =====");
+                        System.out.println("\n---- COURSE MANAGEMENT SYSTEM ----");
                         System.out.println("1. Add New Course");
                         System.out.println("2. Search Course");
                         System.out.println("3. Edit Course");
@@ -56,26 +72,26 @@ import java.util.Scanner;
 
                         switch (choice) {
                             case "1":
-                                engine.inputNewCourse(scanner); /*create a error handling if any of the input is not entered */
+                                Courseengine.inputNewCourse(scanner); /*create a error handling if any of the input is not entered */
                                 break;
 
                             case "2":
                                 System.out.print("Enter Course Code to search: ");
-                                engine.displaySearchResult(scanner.nextLine());//nice
+                                Courseengine.displaySearchResult(scanner.nextLine());//nice
                                 break;
 
                             case "3":
                                 System.out.print("Enter Course Code to edit: ");
-                                engine.editCourse(scanner.nextLine(), scanner);//create a error handling?
+                                Courseengine.editCourse(scanner.nextLine(), scanner);
                                 break;
 
                             case "4":
                                 System.out.print("Enter Course Code to delete: ");
-                                engine.deleteCourse(scanner.nextLine(), scanner);//can delete but alrweady there will show invalid insetad of course not found
+                                Courseengine.deleteCourse(scanner.nextLine(), scanner);//can delete but alrweady there will show invalid insetad of course not found
                                 break;
 
                             case "5":
-                                engine.displayAllCourses(); //nice  //maybe add a special option if its null
+                                Courseengine.displayAllCourses(); //nice  //maybe add a special option if its null
                                 break;
 
                             case "6":
