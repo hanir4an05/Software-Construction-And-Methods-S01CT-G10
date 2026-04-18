@@ -1,7 +1,5 @@
  Student Learning Management System (SLMS)
 
- Overview
-
 The Student Learning Management System (SLMS) is a web-based platform designed to simplify academic management for students, teachers, and administrators. It provides a centralized environment for course, student and enrollment Management.
 
 - Features
