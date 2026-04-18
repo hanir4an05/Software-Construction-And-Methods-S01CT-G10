@@ -6,15 +6,15 @@ The Student Learning Management System (SLMS) is a web-based platform designed t
 
 -Course Management System Features
 
-1. Add course into the system.
+1. Add the course to the system.
 2. Search Course by Course Code
-3. Edit Course content based from course code
-4. Delete course based from Course code
-5. Display all course 
+3. Edit Course content by entering course code
+4. Delete the Course by entering Course code
+5. Display all courses 
 
 -Student Management System Features
 
-1. Add Student into the system.
+1. Add the student to the system.
 2. Search Student info by entering Student ID
 3. Edit Student Info by entering Student ID
 4. Delete Student ID by entering Student ID
