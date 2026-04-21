@@ -28,10 +28,10 @@ import java.util.Scanner;
           studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
                 "0191116674"));
 
-            studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
+            studentEngine.addStudent(new Student("miya", "sw002", "miya550@gmail.com",
                 "0191116674"));
        
-            studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
+            studentEngine.addStudent(new Student("diyana", "sw003", "diyana44384@gmail.com",
                 "0191116674"));
 
 
