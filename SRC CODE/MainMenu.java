@@ -1,4 +1,4 @@
-package SLMSWORKG10
+package SLMSWORKG10;
 
 import java.util.Scanner;
 
