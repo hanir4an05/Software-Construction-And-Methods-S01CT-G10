@@ -1,3 +1,5 @@
+package SLMSWORKG10;
+
 public class EnrollmentEngine {
 
     private String[][] enrollments;
