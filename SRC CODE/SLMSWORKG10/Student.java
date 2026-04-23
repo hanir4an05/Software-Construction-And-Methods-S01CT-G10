@@ -1,7 +1,11 @@
-package SLMSWORKG10
+package SLMSWORKG10;
 
 import java.util.Scanner;
 
+/**
+ * Data class representing an individual Student.
+ * Serves purely as a data structure with getters, setters, and basic display logic.
+ */
 public class Student {
     private String studentName;
     private String studentID;
@@ -33,21 +37,5 @@ public class Student {
         System.out.println("Gmail : " + gmail);
         System.out.println("Phone : " + phoneNumber);
         System.out.println("-------------------------------------------");
-    }
-}
-
-// Removed 'public' so it can stay in the same file, or move to DefineStudent.java
-class DefineStudent {
-    public Student inputStudent(Scanner scanner) {
-        System.out.print("Enter Student Name: ");
-        String studentName = scanner.nextLine();
-        System.out.print("Enter Student ID: ");
-        String studentID = scanner.nextLine();
-        System.out.print("Enter Student Gmail: ");
-        String gmail = scanner.nextLine();
-        System.out.print("Enter Student Phone Number: ");
-        String phoneNumber = scanner.nextLine();
-
-        return new Student(studentName, studentID, gmail, phoneNumber);
     }
 }

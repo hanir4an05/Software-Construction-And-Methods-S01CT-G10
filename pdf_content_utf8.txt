@@ -1,0 +1,394 @@
+﻿CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+Lab and Assignment Outline 
+CSEB5223 
+SOFTWARE CONSTRUCTION & METHODS 
+Project Title: Student Learning Management System (SLMS) 
+What CSEB5223 lab is about?  
+The lab activities let you practice your coding skills. You'll use what you learned in class to 
+solve a real problem. We want you to build good habits and follow coding rules. 
+How we'll do it: 
+1. Step by step: We'll break the project into smaller parts. You'll work on one part at a 
+time. This makes it easier to learn. 
+2. Build bit by bit: Try to have something working after each lab. Even if it's small, it's 
+progress. This helps you see how you're improving. 
+3. Keep it tidy: We'll use the same rules to write code. This includes how we name 
+things and add comments. Clean code is easier to read and fix later. 
+By doing this, you'll get better at making software. You'll also learn good habits for working 
+as a real programmer. 
+Let's start coding and have fun! 
+Main reference of learning management system to be built: Moodle, codebase. 
+  
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+Lab Outline 
+Lab Activities Submission 
+Lab 1 
+9 Feb û 
+15 Feb  
+ò Formation of group members 
+ò Discuss overall lab activities 
+ò Setup repository (codebase) in Github 
+o Team leader authorize / monitor main branch 
+activities and invite all team members to be 
+collaborator 
+o Team leader invite lecturer as collaborator (for 
+assessment purpose): 
+https://github.com/YimLingLoo ) 
+ò Explore main reference site and codebase 
+N/A 
+Lab 2 
+16 Feb û 
+22 Feb 
+Pre-set Software Construction 
+Objective: Draft overall plan and design of the SLMS to be 
+constructed and standards to be used in software construction. 
+(Assignment Part 1) 
+Activities: 
+1. Draft use case and class design of overall SLMS 
+2. Define documentation formatting 
+3. Define coding file formatting 
+4. Define naming conventions û dictionary 
+5. Define function and methods modularity 
+6. Define continuous integration rules 
+7. Submission: 
+a. Report containing items 1 û 6 
+b. Github Readme update 
+End of the 
+lab week 
+22 Feb 
+2026, 
+11:59pm 
+Lab 3 
+23 Feb û 
+1 Mar 
+Lab 4 
+2 Mar û 8 
+Mar 
+Course Profile (Direct Display Input and Output) 
+Objective: Develop a part of the program to manually input 
+course profile data, search, edit and display the successful 
+search / edited course in a clear, organized format. 
+Activities: 
+1. Class Design: 
+a. Create a Course class with attributes such as:  
+ò Course name (full name) 
+ò Course code 
+ò Course credit hour 
+ò Course summary 
+ò Course MS Teams link 
+b. Include appropriate data types for each attribute 
+c. Implement getter and setter methods for each 
+attribute 
+2. Course Input Implementation: 
+a. Input fields for each course attribute 
+b. Implement a 'Submit' button to add a course 
+profile 
+c. Create a list or array to store multiple course 
+objects 
+d. Implement checks / coding technique to prevent 
+array out-of-bound error 
+End of the 
+second lab 
+week 
+8 Mar 
+2026, 
+11:59pm 
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+3. Search Function Development: 
+a. Implement a linear search function to find a 
+course by course code 
+b. Input search criteria 
+c. Display search results with complete course 
+attributes for successful search 
+d. Display ôCourse not foundö or similar message 
+for unsuccessful search 
+4. Edit Function Development: 
+a. Implement search function to find the target 
+course to edit 
+b. Display complete course attributes for successful 
+search with all course attributes editable except 
+for course codes 
+c. Display ôCourse not foundö or similar message 
+for unsuccessful search 
+d. Display edited course to validate changes 
+5. Delete Function Development: 
+a. Implement search function to find the target 
+course to delete 
+b. Display complete course attributes for successful 
+search with confirm message to confirm deletion 
+c. Display ôCourse not foundö or similar message 
+for unsuccessful search 
+d. Display all courses to validate deletion of 
+targeted course 
+6. Data Display Function Development: 
+a. Implement a æView AllÆ button that, when 
+clicked, displays all entered course attributes 
+b. Create a method to format and display all course 
+attributes in a clear, organized manner 
+c. After implementation of Search, Edit or Delete 
+function, data display function will be invoked to 
+display complete course attributes in a clear, 
+organized manner 
+7. Submission: 
+a. Report containing screenshots showing the input 
+fields and output displays. Analysis of software 
+construction best practices and challenges must 
+be included in the report. 
+b. Github codebase updates: 
+i. Lab 3: at least item 1 û 3 
+ii. Lab 4: all items 
+8. Evaluation Criteria: 
+a. Functionality: Does the system allow input of 
+course profiles and display them correctly? Does 
+the system allow searching, editing and deletion 
+of course profile(s)? 
+b. Documentation / Coding Standards: Is 
+documentation sufficient for self-explanation? Is 
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+the code well-organized and readable?  Are all 
+following the pre-set software construction? 
+c. Error Handling: How well does the program 
+handle invalid inputs and potential errors? 
+Lab 5 
+9 Mar û 
+15 Mar 
+Lab 6 
+16 Mar û 
+22 Mar 
+Student Profile (Direct Display Input and Output) 
+Objective: Develop a part of the program to manually input 
+student profile data, search, edit and display the successful 
+search / edited course in a clear, organized format. 
+Activities: 
+1. Class Design: 
+a. Create a Student class with attributes such as:  
+ò Student name (first and last name) 
+ò Student ID 
+ò Student email 
+ò Student phone number 
+b. Include appropriate data types for each attribute 
+c. Implement getter and setter methods for each 
+attribute 
+2. Create Function Development: 
+a. Input fields for each student attribute 
+b. Implement a 'Submit' button to add a student 
+profile 
+c. Create a list or array to store multiple student 
+objects 
+d. Implement checks / coding technique to prevent 
+array out-of-bound error 
+3. Search Function Development: 
+a. Implement a linear search function to find a 
+student by student ID 
+b. Input search criteria 
+c. Display search results with complete student 
+attributes for successful search 
+d. Display ôStudent not foundö or similar message 
+for unsuccessful search 
+4. Edit Function Development: 
+a. Implement search function to find the target 
+student to edit 
+b. Display complete student attributes for 
+successful search with all student attributes 
+editable except for Student ID 
+c. Display ôStudent not foundö or similar message 
+for unsuccessful search 
+d. Display edited student to validate changes 
+5. Delete Function Development: 
+a. Implement search function to find the target 
+student to delete 
+b. Display complete student attributes for 
+successful search with confirm message to 
+confirm deletion 
+End of the 
+second lab 
+week 
+22 Mar 
+2026, 
+11:59pm 
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+c. Display ôStudent not foundö or similar message 
+for unsuccessful search 
+d. Display all students to validate deletion of 
+targeted student 
+6. Data Display Function Development: 
+a. Implement a æView AllÆ button that, when 
+clicked, displays all entered student attributes 
+b. Create a method to format and display all student 
+attributes in a clear, organized manner 
+c. After implementation of Search, Edit or Delete 
+function, data display function will be invoked to 
+display complete student attributes in a clear, 
+organized manner 
+7. System Integration 
+a. Integrate both Course Profile and Student Profile 
+modules in system. 
+8. Submission: 
+a. Report containing screenshots showing the input 
+fields and output displays. Analysis of software 
+construction best practices and challenges must 
+be included in the report. 
+b. Github codebase updates: 
+i. Lab 5: at least item 1 û 4 
+ii. Lab 6: all items 
+9. Evaluation Criteria: 
+a. Functionality: Does the system allow input of 
+student profiles and display them correctly? Does 
+the system allow searching, editing and deletion 
+of student profile(s)? 
+b. Integration: does the system successfully 
+integrate both course and student profile 
+modules? 
+c. Documentation / Coding Standards: Is 
+documentation sufficient for self-explanation? Is 
+the code well-organized and readable?  Are all 
+following the pre-set software construction? 
+d. Error Handling: How well does the program 
+handle invalid inputs and potential errors? 
+Lab 7 
+30 Mar û 
+5 Apr 
+Lab 8 
+6 Apr û 
+12 Apr 
+Course û Student Relationship and middleware API 
+Objective: Implement a system to manage course û student 
+relationships using arrays and demonstrate understanding of 
+modularity and error handling. 
+Activities: 
+1. Data Structure Design: 
+a. Create a Course class with attributes: 
+ò Course code 
+ò Course name 
+ò Course type (core, elective, university) 
+b. Create a Student class with attributes 
+ò Student ID 
+End of the 
+second lab 
+week 
+12 Apr 
+2026, 
+11:59pm 
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+ò Student name 
+c. Implement arrays to store: 
+ò Course objects 
+ò Student objects 
+ò Course û Student relationships (using parallel 
+arrays or a 2D array) 
+2. Relationship Management Functions: 
+a. Implement addCourse() function to add a new 
+course to a student. Initiate a Course û Student 
+relationship. 
+b. Implement addStudent() function to add a new 
+student to a course. Initiate a Course û Student 
+relationship. 
+c. Implement findCourse() function to find a 
+student's course based on studentÆs ID. 
+d. Implement listCourses() function to list all 
+courses that a student enrolled into. 
+e. Implement findStudent() function to find a 
+student in a course based on courseÆs ID. 
+f. Implement listStudents() function to list all 
+students that are assigned to a specific Course. 
+3. Error Handling and Edge Cases: 
+a. Implement checks for: 
+ò Student or course not found in the system 
+ò Student without an assigned course 
+ò Course without an assigned student 
+ò Attempting to assign same student to course 
+ò Attempting to assign same course to student 
+b. Provide appropriate error messages or return 
+values for these cases 
+4. API Implementation: 
+a. Determine an API implementation to cache 
+searches and data filled in textfields or forms. 
+b. Auto suggestion of input based on cached data in 
+input fields. 
+5. System Integration 
+a. Integrate all modules in system. 
+6. Submission: 
+a. Report containing screenshots showing the input 
+fields and output displays. Analysis of software 
+construction best practices and challenges must 
+be included in the report. 
+b. Github codebase updates: 
+i. Lab 7: at least item 1 û 3 
+ii. Lab 8: all items 
+7. Evaluation Criteria: 
+a. Correct implementation of data structures and 
+relationships 
+b. Integration, modularity and organization of code 
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+c. Robustness of error handling and edge case 
+management 
+d. Correct middleware API integration 
+e. Functionality and user-friendliness of the 
+interface 
+f. Clear and informative comments in the code 
+Lab 9 
+13 Apr û 
+19 Apr 
+System Tests 
+Objective: Construct tests to ensure correctness of constructed 
+system. 
+Activities: 
+1. Unit Testing 
+a. Write unit tests for the functions developed in 
+previous labs 
+2. System Testing 
+a. Perform integration testing 
+b. Implement error handling to handle invalid 
+inputs 
+3. Submission: 
+a. Report containing screenshots showing the input 
+fields and output displays (focus on how the 
+system behave in error prone inputs). Analysis of 
+software construction best practices and 
+challenges must be included in the report as well. 
+b. Github codebase updates 
+4. Evaluation Criteria: 
+a. Correctness. Demonstrate how unit tests can help 
+identify bugs and ensure that code behaves as 
+expected. Show the importance of code 
+commenting and quality code. 
+b. Defensive Programming and Error/Exception 
+Handling. 
+End of the 
+week 
+19 Apr 
+2026, 
+11:59pm 
+Lab 10 
+20 Apr û 
+26 Apr 
+Finalization for Documentation/Comments 
+Objective: Complete report documentations. (Assignment Part 
+2) 
+Activities: 
+1. Github repository updates 
+2. Compile project documentation (design decisions, 
+module descriptions, API documentation). 
+3. Evaluation Criteria: Readability and Modularity, code 
+quality standards, coding style and completeness. 
+End of the 
+week 
+26 Apr 
+2026, 
+11:59pm 
+Lab 11 
+27 Apr û 
+3 May 
+Group Interview and Evaluation 
+Objective: Present the project and evaluate the overall process 
+of software construction. (Assignment Part 2) 
+Activities: 
+1. Group interview of the Student Learning Management 
+System (answer questions about construction of the 
+system) 
+2. Evaluation Criteria:  
+N/A 
+CSEB5223 Software Construction & Methods Semester 2 2025/2026 Lab and Assignment Outline 
+a. Overall project quality, best practices for 
+construction and the team's ability to explain 
+their construction decisions. 
+ 

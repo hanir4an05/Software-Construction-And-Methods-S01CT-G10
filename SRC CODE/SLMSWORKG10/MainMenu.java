@@ -1,4 +1,4 @@
-package SLMSWORKG10
+package SLMSWORKG10;
 
 import java.util.Scanner;
 
@@ -22,7 +22,6 @@ import java.util.Scanner;
     
 //String studentName, String studentID, String gmail, String phoneNumber
         // student module
-        DefineStudent studentInput = new DefineStudent();
         StudentEngine studentEngine = new StudentEngine(10);
 
           studentEngine.addStudent(new Student("aza", "sw001", "azaamelia00@gmail.com",
@@ -122,8 +121,7 @@ import java.util.Scanner;
 
                         switch (choice) {
                             case "1":
-                                Student newStudent = studentInput.inputStudent(scanner);
-                                studentEngine.addStudent(newStudent);//just like course
+                                studentEngine.inputNewStudent(scanner);
                                 break;
 
                             case "2":

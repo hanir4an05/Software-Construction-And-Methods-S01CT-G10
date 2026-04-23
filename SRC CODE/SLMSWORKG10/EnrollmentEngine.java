@@ -1,3 +1,5 @@
+package SLMSWORKG10;
+
 public class EnrollmentEngine {
 
     private String[][] enrollments;
@@ -82,4 +84,3 @@ public class EnrollmentEngine {
             System.out.println("Course has no assigned student.");
     }
 }
-
