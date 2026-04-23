@@ -1,0 +1,325 @@
+[33mcommit f7c93debdc18770f40d266715bcc013cb165bd56[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: danial rosli <danialmrosli@gmail.com>
+Date:   Thu Apr 23 17:11:40 2026 +0800
+
+    Changes for Danny's branch
+
+[33mcommit 3d3f1ff749eae20dc3f487fc08ce2e618d4e940d[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Mon Apr 20 00:00:33 2026 +0800
+
+    Delete SRC CODE/Student API/CacheAPI
+
+[33mcommit dfa3dddce03de6300476f0dec22683186dad3244[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Mon Apr 20 00:00:19 2026 +0800
+
+    Add CacheAPI class for student and course caching
+
+[33mcommit 803d88df5813f4e67484bfd114bfe0bcfc717612[m
+Author: danial rosli <danialmrosli@gmail.com>
+Date:   Sun Apr 19 23:53:17 2026 +0800
+
+    add .java file format
+
+[33mcommit ad4819a65bbf5b3a258858061425ae1bb6b22602[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 23:31:07 2026 +0800
+
+    Fix grammatical errors in README features list
+
+[33mcommit cc7445744dcf908267a512bab4eb4ee8b2db8cdc[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 23:29:24 2026 +0800
+
+    Remove Overview section from README
+    
+    Removed the 'Overview' section from the README.
+
+[33mcommit 83280fd8d76bcee66ed90e251ac4364826b893a9[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 23:13:08 2026 +0800
+
+    Revise README with system overview and features
+    
+    Expanded the README to include detailed features and modules of the Student Learning Management System.
+
+[33mcommit 6434c0c8e30b70f1efe647e56fdd11a74e0a046b[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:31:13 2026 +0800
+
+    Update MainMenu
+
+[33mcommit 7657ac01369245cf35807a95a293faedfd35203d[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:29:10 2026 +0800
+
+    Implement StudentEngine class for student management
+
+[33mcommit 8bad869b99235566d706ba82c1b2495e4d86c706[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:28:34 2026 +0800
+
+    Add Student class with input and display methods
+
+[33mcommit 01e1b40b11c590d2fdaf7cbf796b0a345f1f144a[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:26:45 2026 +0800
+
+    Delete SRC CODE/StudentEngine directory
+
+[33mcommit db894a69a8d9e761f1d9e491c38408df50716e6b[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:26:12 2026 +0800
+
+    Delete SRC CODE/Student API/MainMenu
+
+[33mcommit b18b5d38e2ddb8b01f76f37ce9f9011f5e521adc[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:25:54 2026 +0800
+
+    Implement main menu for course and student management
+
+[33mcommit 35fc7964e74fa7db3009cd385a9d2c2b698b3f0c[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:24:52 2026 +0800
+
+    Delete SRC CODE/CourseEngine/Main.java
+
+[33mcommit 62ecbda063590409fc9b78b8a1cfc59e398060c8[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:24:24 2026 +0800
+
+    Enhance CourseEngine with validation and comments
+
+[33mcommit e3d3550c99cabffcb8a454903df305f990cd44d3[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:23:18 2026 +0800
+
+    constructors,getters,setters and display
+
+[33mcommit f12eb8328ce699b927e976026786fd794b957bd6[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:22:43 2026 +0800
+
+     Course.Java
+    
+    Updated comments for clarity and consistency.
+
+[33mcommit 3117f7286d865cf7af446b1d865c8a4bf8926a01[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:19:11 2026 +0800
+
+    Delete course java.java
+
+[33mcommit e954e2e3e8408d0d4ae0059193675ab0b8ac3c87[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:18:49 2026 +0800
+
+    Delete SCM LAB 2 group 10.pdf
+
+[33mcommit 45f39654f33707354966a605518ae6a28bb9f20d[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sat Apr 18 00:18:20 2026 +0800
+
+    Delete CSEB5223 Lab_and_Assignment_Outline.pdf
+
+[33mcommit 7b76212c39a36f202a3059e3731924ecfdc2a50a[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Apr 17 16:19:52 2026 +0800
+
+    Create MainMenu
+
+[33mcommit 32fd9bc9ef1a8d013921eb659c6807d6aee6e7eb[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Apr 17 16:19:26 2026 +0800
+
+    Create CacheAPI
+
+[33mcommit fb6709d36abc2ca12726204c4d54952193caeb36[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Apr 17 16:18:31 2026 +0800
+
+    Implement EnrollmentEngine for student course management
+
+[33mcommit 95022b7789b987e337126d2cf149287082f7cc31[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Apr 17 16:17:23 2026 +0800
+
+    Delete SRC CODE/Student Relationship and middleware API/main.java
+
+[33mcommit da6795f8a56e7b956a91b153c27f7543e6f57d5b[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Thu Apr 16 14:29:39 2026 +0800
+
+    Delete lab 2 report proto 1.docx
+
+[33mcommit 042d5533ea72077f8bd3cb5c7ecfce4ae41f1238[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Apr 5 22:32:55 2026 +0800
+
+    Create main.java
+
+[33mcommit e43bb0a347f8bc85b4510c129b54244289ac417d[m
+Author: danial rosli <danialmrosli@gmail.com>
+Date:   Sun Apr 5 14:43:24 2026 +0800
+
+    Add SearchEngine API
+
+[33mcommit 4f4d3299da80fcc36f11a3e08500225eae9933bd[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Tue Mar 24 14:55:34 2026 +0800
+
+    Add files via upload
+
+[33mcommit 0a12635c9662d79409ba2d45e541760509eb8d60[m
+Author: danial rosli <danialmrosli@gmail.com>
+Date:   Tue Mar 17 14:34:23 2026 +0800
+
+    Add task 5 & 6; Renamed folders
+
+[33mcommit f063c1deb5ba8f31a21dd6132d6b7dae9677d45e[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Tue Mar 17 01:25:34 2026 +0800
+
+    Create test
+
+[33mcommit c21b7dd80e2da3515642743b222a71e2fa7fd2d5[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Tue Mar 17 01:25:17 2026 +0800
+
+    Delete SRC CODE/Student
+
+[33mcommit a8a2e0add2dd686b23f24d0df9fc722534b6ccef[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Tue Mar 17 01:23:27 2026 +0800
+
+    Create Student
+
+[33mcommit a5c02442eacdccd54f379048638bf0f10a372929[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 22:53:57 2026 +0800
+
+    Update Course.Java
+
+[33mcommit a39c46c5b5f9500f457f384dac338067139046c6[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 22:39:32 2026 +0800
+
+    Delete SRC CODE/Course2.java
+
+[33mcommit 72804aea7babb9c8b723cc9843c5396feab53079[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 22:39:13 2026 +0800
+
+    Delete SRC CODE/addCourse.java
+
+[33mcommit 9346ff02c6fff3f54d06a4665b51a4b9db5f19f9[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 20:40:15 2026 +0800
+
+    Create Main.java
+
+[33mcommit 15a22c6b2c7e68868cae075494e09476f3d94134[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 20:39:40 2026 +0800
+
+    Create CourseEngine.Java
+
+[33mcommit 9cc992cd3b7eafa0f541de5e42c661927f357a3a[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 20:38:56 2026 +0800
+
+    Delete SRC CODE/Course.Java
+
+[33mcommit 176a1527efa57bcc999bbdc435eb329b03599f29[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 20:38:15 2026 +0800
+
+    Create Course.Java
+
+[33mcommit 881465a96e1f61ca7c95ed54985f948e2d2b5086[m
+Author: danial rosli <danialmrosli@gmail.com>
+Date:   Sun Mar 8 16:26:10 2026 +0800
+
+    feat: Introduce course management system including course creation, search, edit, and display features.
+
+[33mcommit d7271c1af936a8879d3b89d95297ac400264a89d[m
+Merge: 6bf4fb6 937a123
+Author: danial rosli <danialmrosli@gmail.com>
+Date:   Sun Mar 8 15:12:54 2026 +0800
+
+    Merge branch 'Irfannnn' of https://github.com/hanir4an05/Software-Construction-And-Methods-S01CT-G10
+    To pull into my branch
+
+[33mcommit 6bf4fb64c2412df8aba6083d92af2918fa9d5bca[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 15:10:09 2026 +0800
+
+    Create Course2.java
+
+[33mcommit 937a123f9dcdbb816db398bc80e8a6a534ebd229[m
+Author: pelajardepresi <muhamadirfan1q@gmail.com>
+Date:   Sun Mar 8 11:19:52 2026 +0800
+
+    Add search and edit functions for Course class
+
+[33mcommit 63df8ee8f038cac928a67b638e4cca05f62b5c1d[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Mar 8 00:15:29 2026 +0800
+
+    Create Course.Java
+
+[33mcommit ae03cf5269ff0cd02e803836983800eebdc953e8[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Feb 22 12:43:25 2026 +0800
+
+    Create README.md
+
+[33mcommit be2d899a79b9a52140bb81952bab704646a5cbab[m
+Merge: 305eb88 36b3f1f
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Feb 22 12:41:35 2026 +0800
+
+    Merge pull request #2 from hanir4an05/hanir4an05-patch-2
+    
+    Add files via upload
+
+[33mcommit 36b3f1f7670811fac741114cac849964918d6099[m[33m ([m[1;31morigin/hanir4an05-patch-2[m[33m)[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Feb 22 12:41:15 2026 +0800
+
+    Add files via upload
+
+[33mcommit 305eb88ca60893bdbcd47fcc8c4fda750e2884a0[m
+Merge: d4fcbff 2add36f
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Feb 22 00:58:21 2026 +0800
+
+    Merge pull request #1 from hanir4an05/hanir4an05-patch-1
+    
+    test 1
+
+[33mcommit 2add36f9ec31ec48f2ef57326597d92d2bf2891c[m[33m ([m[1;31morigin/hanir4an05-patch-1[m[33m)[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Sun Feb 22 00:57:56 2026 +0800
+
+    Add files via upload
+
+[33mcommit d4fcbff2004f621d9320442b00c935b39332c284[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Feb 20 15:12:16 2026 +0800
+
+    Delete test 1
+
+[33mcommit 0afc9ff3a356c0c3115560196ec233c94a65140e[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Feb 20 15:11:34 2026 +0800
+
+    Add files via upload
+
+[33mcommit b5cc0048339f6838d8ffc8c993479f656290eab2[m
+Author: hanir4an05 <harizirfan2005@gmail.com>
+Date:   Fri Feb 20 15:09:45 2026 +0800
+
+    Create test 1
